@@ -9,7 +9,7 @@ import org.springframework.core.convert.converter.Converter;
  * fileName       : StringToIpPortConverter
  * author         : kanghyun Kim
  * date           : 2022/09/30
- * description    : docs > https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#core-convert
+ * description    : docs > <a href="https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#core-convert">...</a>
  * ===========================================================
  * DATE              AUTHOR             NOTE
  * -----------------------------------------------------------
