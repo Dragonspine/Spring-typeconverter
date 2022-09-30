@@ -2,6 +2,7 @@ package hello.typeconverter.type;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.ToString;
 
 /**
  * packageName    : hello.typeconverter.type
@@ -15,6 +16,7 @@ import lombok.Getter;
  * 2022/09/30        kanghyun Kim      최초 생성
  */
 @Getter
+@ToString
 @EqualsAndHashCode // .equals 로 모든 맴버변수가 같으면 true 리턴
 public class IpPort {
 
