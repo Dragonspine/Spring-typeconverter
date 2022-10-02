@@ -28,11 +28,15 @@ public class WebConfig implements WebMvcConfigurer {
      */
     @Override
     public void addFormatters(FormatterRegistry registry) {
-        registry.addConverter(new IpPortToStringConverter());
-        registry.addConverter(new StringToIntegerConverter());
-        registry.addConverter(new StringToIpPortConverter());
-        registry.addConverter(new IntegerToStringConverter());
+        // 포멧터보다 컨버터가 우선순위가 높다 (포멧터 parse(문자>숫자), format(숫자>문자)라서 적용안됨)
+//        registry.addConverter(new StringToIntegerConverter());
+//        registry.addConverter(new IntegerToStringConverter());
 
+        // 컨버터
+        registry.addConverter(new StringToIpPortConverter());
+        registry.addConverter(new IpPortToStringConverter());
+
+        // 포멧터
         registry.addFormatter(new MyNumberFormatter());
     }
 
