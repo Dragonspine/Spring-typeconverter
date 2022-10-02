@@ -2,7 +2,6 @@ package hello.typeconverter.formatter;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.format.Formatter;
-import org.springframework.lang.Nullable;
 
 import java.text.NumberFormat;
 import java.text.ParseException;
